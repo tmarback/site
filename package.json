@@ -19,6 +19,7 @@
     "format": "prettier --write './**/*.@(js|jsx|ts|tsx)'",
     "format:check": "prettier --check './**/*.@(js|jsx|ts|tsx)'",
     "i18n:extract": "formatjs extract './**/*.{ts,tsx}' --ignore node_modules './**/*.d.ts' --out-file translations/en.json",
+    "i18n:sync": "node ./scripts/syncTranslations.js",
     "i18n:compile": "formatjs compile-folder translations --ast common/i18n/messages"
   },
   "dependencies": {

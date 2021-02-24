@@ -1,0 +1,51 @@
+name: i18n
+
+on:
+  - push
+
+jobs:
+  i18n:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup git user
+        run: |
+          apt install git
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          check-latest: true
+
+      - name: Setup cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            .yarn/cache
+          key: ubuntu-latest-14-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            ubuntu-latest-14-
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Extract application strings
+        run: yarn run i18n:extract
+
+      - name: Sync strings to translations
+        run: yarn run i18n:sync
+
+      - name: Compile translations
+        run: yarn run i18n:compile
+
+      - name: Commit results
+        run: |
+          git add ./translations
+          git add ./common/i18n/messages
+          git commit -m "Extract strings and compile tranlation files"
