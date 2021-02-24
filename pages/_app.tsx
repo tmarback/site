@@ -5,6 +5,7 @@ import { Observer } from "mobx-react-lite"
 import App, { AppProps } from "next/app"
 import React from "react"
 import { ThemeProvider } from "styled-components"
+import { I18nProvider } from "../common/i18n/I18nProvider"
 import { ModalManager } from "../common/modal/ModalManager"
 import { ModalManagerProvider } from "../common/modal/ModalManagerContext"
 import { ModalOverlay } from "../common/modal/ModalOverlay"
@@ -56,27 +57,29 @@ export default class Application extends App {
     const { Component, pageProps } = this.props
 
     return (
-      <Observer>
-        {() => (
-          <ThemeProvider theme={this.preferenceManager.theme}>
-            <GlobalStyle />
-            <ErrorBoundary>
-              <PreferenceManagerProvider value={this.preferenceManager}>
-                <ModalManagerProvider value={this.modalManager}>
-                  <PopoverManagerProvider value={this.popoverManager}>
-                    <TooltipManagerProvider value={this.tooltipManager}>
-                      <Component {...pageProps} />
-                      <ModalOverlay />
-                      <PopoverOverlay />
-                      <TooltipOverlay />
-                    </TooltipManagerProvider>
-                  </PopoverManagerProvider>
-                </ModalManagerProvider>
-              </PreferenceManagerProvider>
-            </ErrorBoundary>
-          </ThemeProvider>
-        )}
-      </Observer>
+      <I18nProvider>
+        <Observer>
+          {() => (
+            <ThemeProvider theme={this.preferenceManager.theme}>
+              <GlobalStyle />
+              <ErrorBoundary>
+                <PreferenceManagerProvider value={this.preferenceManager}>
+                  <ModalManagerProvider value={this.modalManager}>
+                    <PopoverManagerProvider value={this.popoverManager}>
+                      <TooltipManagerProvider value={this.tooltipManager}>
+                        <Component {...pageProps} />
+                        <ModalOverlay />
+                        <PopoverOverlay />
+                        <TooltipOverlay />
+                      </TooltipManagerProvider>
+                    </PopoverManagerProvider>
+                  </ModalManagerProvider>
+                </PreferenceManagerProvider>
+              </ErrorBoundary>
+            </ThemeProvider>
+          )}
+        </Observer>
+      </I18nProvider>
     )
   }
 }

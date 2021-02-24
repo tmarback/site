@@ -9,6 +9,7 @@
   ],
   "plugins": [
     ["babel-plugin-styled-components"],
+    ["babel-plugin-formatjs"],
     ["@babel/plugin-proposal-decorators", { "legacy": true }],
     ["@babel/plugin-proposal-class-properties", { "loose": true }]
   ],

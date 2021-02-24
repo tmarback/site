@@ -1,6 +1,7 @@
 import Head from "next/head"
 import { useRouter } from "next/router"
 import React, { ReactNode } from "react"
+import { useIntl } from "react-intl"
 
 const links = [
   {
@@ -53,6 +54,8 @@ export type PageHeadProps = {
 export function PageHead(props: PageHeadProps) {
   const { title, description, children } = props
 
+  const intl = useIntl()
+
   const router = useRouter()
 
   return (
@@ -64,7 +67,14 @@ export function PageHead(props: PageHeadProps) {
         content="width=device-width, initial-scale=1.0"
       />
       <title key="title">
-        {title === "Discohook" ? title : `${title} • Discohook`}
+        {intl.formatMessage(
+          {
+            defaultMessage:
+              "{title, select, Discohook {{title}} other {{title} • Discohook}}",
+            description: "website page title",
+          },
+          { title },
+        )}
       </title>
       <meta key="description" name="description" content={description} />
       <meta key="og:title" property="og:title" content={title} />
@@ -80,7 +90,14 @@ export function PageHead(props: PageHeadProps) {
         property="og:description"
         content={description}
       />
-      <meta key="og:site_name" property="og:site_name" content="Discohook" />
+      <meta
+        key="og:site_name"
+        property="og:site_name"
+        content={intl.formatMessage({
+          defaultMessage: "Discohook",
+          description: "product name",
+        })}
+      />
       <link
         key="canonical"
         rel="canonical"
@@ -92,7 +109,10 @@ export function PageHead(props: PageHeadProps) {
       <meta
         key="application-name"
         name="application-name"
-        content="Discohook"
+        content={intl.formatMessage({
+          defaultMessage: "Discohook",
+          description: "product name",
+        })}
       />
       <meta key="theme-color" name="theme-color" content="#58b9ff" />
       <meta key="color-scheme" name="color-scheme" content="dark light" />

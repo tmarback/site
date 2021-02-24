@@ -1,4 +1,5 @@
 import React from "react"
+import { useIntl } from "react-intl"
 import styled from "styled-components"
 import { monochromeLogo } from "../../icons/logo"
 
@@ -75,38 +76,74 @@ const LegalInfo = styled.p`
 `
 
 export function Footer() {
+  const intl = useIntl()
+
   return (
     <Container>
       <BrandContainer>
         {monochromeLogo}
-        <BrandName>Discohook</BrandName>
+        <BrandName>
+          {intl.formatMessage({
+            defaultMessage: "Discohook",
+            description: "product name",
+          })}
+        </BrandName>
       </BrandContainer>
       <Tagline>
-        The easiest way to build and send Discord messages with embeds using
-        webhooks.
+        {intl.formatMessage({
+          defaultMessage:
+            "The easiest way to build and send Discord messages with embeds using webhooks.",
+          description: "product tagline",
+        })}
       </Tagline>
-      <Info>Email: &quot;hello&quot; at discohook.app</Info>
+      <Info>
+        {intl.formatMessage({
+          defaultMessage: "Email: ''hello'' at discohook.app",
+          description: "contact email in footer",
+        })}
+      </Info>
       <NavigationList>
         <NavigationItem href="/discord" target="_blank">
-          Discord Support Server
+          {intl.formatMessage({
+            defaultMessage: "Discord Support Server",
+            description: "discord server invite link in footer",
+          })}
         </NavigationItem>
         <NavigationItem href="/bot" target="_blank">
-          Discord Bot
+          {intl.formatMessage({
+            defaultMessage: "Discord Bot",
+            description: "discord bot invite link in footer",
+          })}
         </NavigationItem>
         <NavigationItem href="https://git.io/discohook" target="_blank">
-          Source Code
+          {intl.formatMessage({
+            defaultMessage: "Source Code",
+            description: "source code link in footer",
+          })}
         </NavigationItem>
         <NavigationItem href="https://patreon.com/discohook" target="_blank">
-          Support Discohook
+          {intl.formatMessage({
+            defaultMessage: "Support Discohook",
+            description: "donation link in footer",
+          })}
         </NavigationItem>
       </NavigationList>
       <LegalInfo>
-        &copy; 2020 The Discohook Authors. Discohook is not affiliated with
-        Discord.
+        {intl.formatMessage({
+          defaultMessage:
+            "© 2020 The Discohook Authors. Discohook is not affiliated with Discord.",
+          description: "copyright notice and affiliation disclaimer in footer",
+        })}
       </LegalInfo>
       <LegalInfo>
-        This website is made available under the terms of the GNU AGPL v3
-        license.
+        {intl.formatMessage(
+          {
+            defaultMessage:
+              "This website is made available under the terms of the {license} license.",
+            description: "license notice in footer",
+          },
+          { license: "GNU AGPLv3" },
+        )}
       </LegalInfo>
     </Container>
   )
