@@ -47,10 +47,8 @@ jobs:
 
       - name: Commit results
         run: |
-          git add ./translations
-          git add ./common/i18n/messages
-          git diff --quiet --exit-code HEAD
-          if [ "$?" -eq "1" ]
+          git add ./translations ./common/i18n/messages
+          if ! git diff --quiet --exit-code HEAD
           then
             git commit -m "Extract strings and compile tranlation files"
             git push
