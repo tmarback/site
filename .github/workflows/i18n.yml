@@ -12,7 +12,6 @@ jobs:
 
       - name: Setup git user
         run: |
-          apt install git
           git config user.name github-actions
           git config user.email github-actions@github.com
 
@@ -49,3 +48,4 @@ jobs:
           git add ./translations
           git add ./common/i18n/messages
           git commit -m "Extract strings and compile tranlation files"
+          git push
