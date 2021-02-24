@@ -1,0 +1,42 @@
+{
+  "056bc": {
+    "defaultMessage": "Discord Ondersteuning Server",
+    "description": "discord server invite link in footer"
+  },
+  "1a07a": {
+    "defaultMessage": "De makkelijkste manier om Discord berichten met embeds te versturen met webhooks.",
+    "description": "product tagline"
+  },
+  "1a18a": {
+    "defaultMessage": "{title, select, Discohook {{title}} other {{title} • Discohook}}",
+    "description": "website page title"
+  },
+  "3653c": {
+    "defaultMessage": "© 2020 De Discohook-auters. Discohook is not aangesloten bij Discord.",
+    "description": "copyright notice and affiliation disclaimer in footer"
+  },
+  "374cc": {
+    "defaultMessage": "E-mail: ''hello'' op discohook.app",
+    "description": "contact email in footer"
+  },
+  "4a6a3": {
+    "defaultMessage": "Discohook",
+    "description": "product name"
+  },
+  "4decd": {
+    "defaultMessage": "Broncode",
+    "description": "source code link in footer"
+  },
+  "681f7": {
+    "defaultMessage": "Steun Discohook",
+    "description": "donation link in footer"
+  },
+  "b803a": {
+    "defaultMessage": "Discord Bot",
+    "description": "discord bot invite link in footer"
+  },
+  "fa877": {
+    "defaultMessage": "Deze website is beschikbaar gemaakt onder de voorwaarden van de {license} licentie.",
+    "description": "license notice in footer"
+  }
+}
