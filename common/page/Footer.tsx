@@ -121,7 +121,7 @@ export function Footer() {
             description: "source code link in footer",
           })}
         </NavigationItem>
-        <NavigationItem href="https://patreon.com/discohook" target="_blank">
+        <NavigationItem href="https://patreon.com/vivifund" target="_blank">
           {intl.formatMessage({
             defaultMessage: "Support Discohook",
             description: "donation link in footer",
