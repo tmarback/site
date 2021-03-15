@@ -64,7 +64,11 @@ export default function Main(props: MainProps) {
       const json = JSON.stringify({ messages })
       const base64 = base64UrlEncode(json)
 
-      history.replaceState({ __N: false }, "", `/?data=${base64}`)
+      history.replaceState(
+        { __N: false },
+        "",
+        `${location.pathname}?data=${base64}`,
+      )
     }, 500)
   })
 
