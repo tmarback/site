@@ -25,6 +25,7 @@ export const WebhookModel = types
     channelId: undefined as string | undefined,
     guildId: undefined as string | undefined,
     token: undefined as string | undefined,
+    thread_id: undefined as string | null | undefined,
   }))
   .views(self => ({
     get avatarUrl() {
@@ -51,16 +52,24 @@ export const WebhookModel = types
       if (match) {
         const [, messageId] = match
 
+        let url = `https://${host}/api/v8/webhooks/${self.snowflake}/${self.token}/messages/${messageId}`
+        if (self.thread_id != null) {
+          url = `${url}?thread_id=${self.thread_id}`
+        }
         return [
           "PATCH",
-          `https://${host}/api/v8/webhooks/${self.snowflake}/${self.token}/messages/${messageId}`,
+          url,
+        ]
+      } else {
+        let url = `https://${host}/api/v8/webhooks/${self.snowflake}/${self.token}?wait=true`
+        if (self.thread_id != null) {
+            url = `${url}&thread_id=${self.thread_id}`
+        }
+        return [
+          "POST",
+          url,
         ]
       }
-
-      return [
-        "POST",
-        `https://${host}/api/v8/webhooks/${self.snowflake}/${self.token}?wait=true`,
-      ]
     },
   }))
   .actions(self => ({
@@ -79,6 +88,7 @@ export const WebhookModel = types
       self.channelId = undefined
       self.guildId = undefined
       self.token = undefined
+      self.thread_id = undefined
 
       try {
         const url = new URL(self.url)
@@ -102,6 +112,7 @@ export const WebhookModel = types
         self.channelId = webhook.channel_id
         self.guildId = webhook.guild_id
         self.token = webhook.token
+        self.thread_id = url.searchParams.get("thread_id")
 
         /* eslint-enable require-atomic-updates */
       } catch {
