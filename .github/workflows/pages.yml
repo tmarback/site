@@ -28,10 +28,13 @@ jobs:
       run: yarn install
     
     - name: Build project
-      run: yarn run build
+      run: yarn build
     
     - name: Run tests
       run: yarn run test
+      
+    - name: Export project
+      run: yarn run export
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
