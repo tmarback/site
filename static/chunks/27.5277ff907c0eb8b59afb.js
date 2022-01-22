@@ -1,0 +1,2 @@
+(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[27],{ddo8:function(n,_){n.exports=function(n){return{name:"Backus\u2013Naur Form",contains:[{className:"attribute",begin:/</,end:/>/},{begin:/::=/,end:/$/,contains:[{begin:/</,end:/>/},n.C_LINE_COMMENT_MODE,n.C_BLOCK_COMMENT_MODE,n.APOS_STRING_MODE,n.QUOTE_STRING_MODE]}]}}}}]);
+//# sourceMappingURL=27.5277ff907c0eb8b59afb.js.map

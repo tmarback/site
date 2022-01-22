@@ -1,0 +1,2 @@
+(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[28],{WSH0:function(n,e){n.exports=function(n){const e={className:"literal",begin:/[+-]/,relevance:0};return{name:"Brainfuck",aliases:["bf"],contains:[n.COMMENT("[^\\[\\]\\.,\\+\\-<> \r\n]","[\\[\\]\\.,\\+\\-<> \r\n]",{returnEnd:!0,relevance:0}),{className:"title",begin:"[\\[\\]]",relevance:0},{className:"string",begin:"[\\.,]",relevance:0},{begin:/(?:\+\+|--)/,contains:[e]},e]}}}}]);
+//# sourceMappingURL=28.c5243835d681bb2f749e.js.map

@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { first } from \"./first\";\nimport { isNumber } from \"./isNumber\";\nexport const between = (min, max) => first(isNumber, (value, key) => min > value || max < value ? [`${key}: Must be between ${min} and ${max} inclusive`] : []);","map":null,"metadata":{},"sourceType":"module"}

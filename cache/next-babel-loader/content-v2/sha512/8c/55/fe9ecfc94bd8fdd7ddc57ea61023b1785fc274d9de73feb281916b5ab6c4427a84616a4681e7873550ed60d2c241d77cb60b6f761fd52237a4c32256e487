@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { autorun } from \"mobx\";\nimport { useEffect } from \"react\";\nexport const useAutorun = fn => {\n  useEffect(() => autorun(fn));\n};","map":null,"metadata":{},"sourceType":"module"}

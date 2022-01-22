@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { first } from \"./first\";\nimport { isArray } from \"./isArray\";\nexport const contains = validate => first(isArray, (value, key) => value.flatMap((item, index) => validate(item, `${key}[${index}]`)));","map":null,"metadata":{},"sourceType":"module"}

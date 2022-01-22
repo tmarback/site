@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport React from \"react\";\nimport { ErrorPage } from \"../common/page/ErrorPage\";\nexport default function NotFound() {\n  return /*#__PURE__*/_jsx(ErrorPage, {\n    statusCode: 404\n  });\n}","map":null,"metadata":{},"sourceType":"module"}

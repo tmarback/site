@@ -1,0 +1,2 @@
+(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[58],{G01c:function(n,a){n.exports=function(n){const a=n.COMMENT(/\(\*/,/\*\)/);return{name:"Extended Backus-Naur Form",illegal:/\S/,contains:[a,{className:"attribute",begin:/^[ ]*[a-zA-Z]+([\s_-]+[a-zA-Z]+)*/},{begin:/=/,end:/[.;]/,contains:[a,{className:"meta",begin:/\?.*\?/},{className:"string",variants:[n.APOS_STRING_MODE,n.QUOTE_STRING_MODE,{begin:"`",end:"`"}]}]}]}}}}]);
+//# sourceMappingURL=58.b2ff182d09da24dd5ab9.js.map

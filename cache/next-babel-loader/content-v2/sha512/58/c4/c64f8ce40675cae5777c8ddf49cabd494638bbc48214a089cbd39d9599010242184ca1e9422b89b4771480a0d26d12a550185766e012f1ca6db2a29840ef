@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { first } from \"./first\";\nimport { isString } from \"./isString\";\nexport const isUrl = first(isString, (value, key) => /^https?:\\/\\//.test(value) ? [] : [`${key}: Must be URL`]);","map":null,"metadata":{},"sourceType":"module"}

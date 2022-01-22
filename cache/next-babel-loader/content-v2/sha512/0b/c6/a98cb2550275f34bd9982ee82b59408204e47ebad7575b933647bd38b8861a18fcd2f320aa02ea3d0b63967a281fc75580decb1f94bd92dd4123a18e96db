@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createContext } from \"react\";\nexport const TooltipManagerContext = /*#__PURE__*/createContext(null);\nTooltipManagerContext.displayName = \"TooltipManagerContext\";\nexport const TooltipManagerProvider = TooltipManagerContext.Provider;","map":null,"metadata":{},"sourceType":"module"}

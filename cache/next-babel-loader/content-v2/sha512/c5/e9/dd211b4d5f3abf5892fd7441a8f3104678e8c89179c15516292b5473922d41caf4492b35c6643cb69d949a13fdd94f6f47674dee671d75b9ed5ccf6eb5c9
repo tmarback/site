@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { all } from \"./all\";\nimport { first } from \"./first\";\nimport { isObject } from \"./isObject\";\nimport { requiresKey } from \"./requiresKey\";\nexport const requiresKeys = (...keys) => first(isObject, all(...keys.map(key => requiresKey(key))));","map":null,"metadata":{},"sourceType":"module"}

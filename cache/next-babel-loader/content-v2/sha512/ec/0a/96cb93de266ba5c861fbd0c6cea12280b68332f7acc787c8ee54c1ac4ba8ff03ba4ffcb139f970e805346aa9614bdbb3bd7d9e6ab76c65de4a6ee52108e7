@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createContext } from \"react\";\nexport const BackupManagerContext = /*#__PURE__*/createContext(null);\nBackupManagerContext.displayName = \"BackupManagerContext\";\nexport const BackupManagerProvider = BackupManagerContext.Provider;","map":null,"metadata":{},"sourceType":"module"}

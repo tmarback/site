@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled from \"styled-components\";\nexport const Icon = styled.div.withConfig({\n  componentId: \"sc-2r5bc6-0\"\n})([\"padding:8px;margin:-8px 0;align-self:baseline;& > svg{display:block;}\"]);","map":null,"metadata":{},"sourceType":"module"}

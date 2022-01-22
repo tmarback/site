@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const delay = async (ms) => new Promise(resolve => {\n  setTimeout(resolve, ms);\n});","map":null,"metadata":{},"sourceType":"module"}

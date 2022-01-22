@@ -1,0 +1,2 @@
+(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[118],{ZrqW:function(e,n){e.exports=function(e){return{name:"Mojolicious",subLanguage:"xml",contains:[{className:"meta",begin:"^__(END|DATA)__$"},{begin:"^\\s*%{1,2}={0,2}",end:"$",subLanguage:"perl"},{begin:"<%{1,2}={0,2}",end:"={0,1}%>",subLanguage:"perl",excludeBegin:!0,excludeEnd:!0}]}}}}]);
+//# sourceMappingURL=118.bcf91a6834d3adb3b366.js.map

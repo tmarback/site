@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { first } from \"./first\";\nimport { isObject } from \"./isObject\";\nexport const isShape = shape => first(isObject, (value, key) => Object.entries(shape).flatMap(([shapeKey, validate]) => Object.prototype.hasOwnProperty.call(value, shapeKey) ? validate(value[shapeKey], `${key}.${shapeKey}`) : []));","map":null,"metadata":{},"sourceType":"module"}

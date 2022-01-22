@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const getLengthConstraintColor = (current, max) => {\n  const warningLimit = Math.max(max * 0.8, max - 50);\n  if (current > max) return \"danger\";else if (current > warningLimit) return \"warning\";\n  return \"normal\";\n};","map":null,"metadata":{},"sourceType":"module"}

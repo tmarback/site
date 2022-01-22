@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { first } from \"./first\";\nimport { isString } from \"./isString\";\nexport const isDate = first(isString, (value, key) => /^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}?Z$/.test(value) ? [] : [`${key}: Must be date in ISO 8601 format`]);","map":null,"metadata":{},"sourceType":"module"}

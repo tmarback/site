@@ -1,0 +1,2 @@
+(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[179],{BrQc:function(n,e){n.exports=function(n){return{name:"Test Anything Protocol",case_insensitive:!0,contains:[n.HASH_COMMENT_MODE,{className:"meta",variants:[{begin:"^TAP version (\\d+)$"},{begin:"^1\\.\\.(\\d+)$"}]},{begin:/---$/,end:"\\.\\.\\.$",subLanguage:"yaml",relevance:0},{className:"number",begin:" (\\d+) "},{className:"symbol",variants:[{begin:"^ok"},{begin:"^not ok"}]}]}}}}]);
+//# sourceMappingURL=179.fa2730e1d2a0c6525e5d.js.map

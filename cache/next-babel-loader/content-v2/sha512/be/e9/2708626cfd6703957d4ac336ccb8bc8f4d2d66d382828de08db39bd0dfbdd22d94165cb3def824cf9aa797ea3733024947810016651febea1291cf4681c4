@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createContext } from \"react\";\nexport const EditorManagerContext = /*#__PURE__*/createContext(null);\nEditorManagerContext.displayName = \"EditorManagerContext\";\nexport const EditorManagerProvider = EditorManagerContext.Provider;","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { useEffect, useLayoutEffect } from \"react\";\nexport const useIsomorphicLayoutEffect = false ? useLayoutEffect : useEffect;","map":null,"metadata":{},"sourceType":"module"}

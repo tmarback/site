@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createContext } from \"react\";\nexport const PopoverManagerContext = /*#__PURE__*/createContext(null);\nPopoverManagerContext.displayName = \"PopoverManagerContext\";\nexport const PopoverManagerProvider = PopoverManagerContext.Provider;","map":null,"metadata":{},"sourceType":"module"}

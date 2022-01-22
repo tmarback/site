@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const first = (...validators) => (value, key) => validators.reduce((results, validate) => results.some(result => typeof result === \"string\") ? results : validate(value, key), []);","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"// eslint-disable-next-line @typescript-eslint/ban-types\nexport const bindToInput = (observable, key) => {\n  return {\n    value: observable[key],\n    onChange: value => {\n      observable[key] = value;\n    }\n  };\n};","map":null,"metadata":{},"sourceType":"module"}

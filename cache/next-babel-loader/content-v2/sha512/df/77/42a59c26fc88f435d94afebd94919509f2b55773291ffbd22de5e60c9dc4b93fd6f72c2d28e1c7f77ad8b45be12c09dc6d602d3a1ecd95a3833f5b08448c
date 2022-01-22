@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createContext } from \"react\";\nexport const PreferenceManagerContext = /*#__PURE__*/createContext(null);\nPreferenceManagerContext.displayName = \"PreferenceManagerContext\";\nexport const PreferenceManagerProvider = PreferenceManagerContext.Provider;","map":null,"metadata":{},"sourceType":"module"}

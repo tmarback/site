@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport React from \"react\";\nexport const download = /*#__PURE__*/_jsx(\"svg\", {\n  width: \"24\",\n  height: \"24\",\n  viewBox: \"0 0 24 24\",\n  children: /*#__PURE__*/_jsx(\"path\", {\n    d: \"M19,9h-4V3H9v6H5l7,7,7-7zM5,18v2h14v-2H5z\"\n  })\n});","map":null,"metadata":{},"sourceType":"module"}

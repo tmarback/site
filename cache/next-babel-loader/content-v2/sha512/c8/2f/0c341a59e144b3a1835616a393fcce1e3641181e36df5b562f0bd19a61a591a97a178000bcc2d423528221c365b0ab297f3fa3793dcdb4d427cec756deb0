@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { base64Encode } from \"./base64Encode\";\nexport const base64UrlEncode = utf8 => {\n  return base64Encode(utf8).replace(/\\+/g, \"-\").replace(/\\//g, \"_\").replace(/=/g, \"\");\n};","map":null,"metadata":{},"sourceType":"module"}

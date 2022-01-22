@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const DEFAULT_PREFERENCES = {\n  color: \"dark\",\n  display: \"cozy\",\n  fontSize: 16,\n  confirmExit: false,\n  expandSections: false\n};","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { reaction } from \"mobx\";\nimport { useEffect } from \"react\";\nexport const useReaction = (expression, effect) => {\n  useEffect(() => reaction(expression, effect));\n};","map":null,"metadata":{},"sourceType":"module"}

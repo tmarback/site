@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { useRef } from \"react\";\nconst UNINITIALISED = Symbol(\"UNINITIALISED\");\nexport const useLazyValue = initializer => {\n  const ref = useRef(UNINITIALISED);\n\n  if (ref.current === UNINITIALISED) {\n    ref.current = initializer();\n  }\n\n  return ref.current;\n};","map":null,"metadata":{},"sourceType":"module"}

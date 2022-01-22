@@ -1,0 +1,1 @@
+{"ast":null,"code":"const server = true;\nlet nextId = server ? -1 : 1;\nexport const getUniqueId = () => {\n  try {\n    return nextId;\n  } finally {\n    nextId += server ? -1 : 1;\n  }\n};\nexport const resetNextId = (id = server ? -1 : 1) => {\n  nextId = id;\n};","map":null,"metadata":{},"sourceType":"module"}

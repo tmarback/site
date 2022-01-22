@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled from \"styled-components\";\nexport const InputLabel = styled.div.withConfig({\n  componentId: \"sc-1szbp18-0\"\n})([\"color:\", \";font-size:16px;font-weight:500;&:not(:empty){margin-bottom:4px;}\"], ({\n  theme\n}) => theme.header.primary);","map":null,"metadata":{},"sourceType":"module"}

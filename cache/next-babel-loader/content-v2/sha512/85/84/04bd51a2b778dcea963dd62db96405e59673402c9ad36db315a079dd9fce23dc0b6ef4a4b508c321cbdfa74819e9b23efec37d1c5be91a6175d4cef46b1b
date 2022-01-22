@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled from \"styled-components\";\nimport { IconButton } from \"../../layout/IconButton\";\nexport const ModalAction = styled(IconButton).attrs({\n  tooltip: false\n}).withConfig({\n  componentId: \"iaphm-0\"\n})([\"margin:0 -8px;\"]);","map":null,"metadata":{},"sourceType":"module"}

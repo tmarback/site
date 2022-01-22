@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { defaultRules, inlineRegex } from \"simple-markdown\";\nexport const emote = {\n  order: defaultRules.text.order,\n  match: inlineRegex(/^¯\\\\_\\(ツ\\)_\\/¯/),\n  parse: capture => {\n    const [content] = capture;\n    return {\n      type: \"text\",\n      content\n    };\n  },\n  react: null\n};","map":null,"metadata":{},"sourceType":"module"}

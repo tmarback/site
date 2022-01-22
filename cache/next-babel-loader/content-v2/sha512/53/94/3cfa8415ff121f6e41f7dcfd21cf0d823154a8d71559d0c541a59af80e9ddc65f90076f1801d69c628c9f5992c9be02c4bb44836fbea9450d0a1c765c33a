@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const maxLength = length => value => value.length > length ? `Exceeds maximum length of ${length}` : false;","map":null,"metadata":{},"sourceType":"module"}

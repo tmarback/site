@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const optional = validate => (value, key) => value === undefined ? [] : validate(value, key);","map":null,"metadata":{},"sourceType":"module"}

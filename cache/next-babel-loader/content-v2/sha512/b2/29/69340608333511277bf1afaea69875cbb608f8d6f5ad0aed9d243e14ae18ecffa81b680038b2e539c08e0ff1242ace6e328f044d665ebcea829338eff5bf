@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { useEffect } from \"react\";\nexport const useWindowEvent = (type, listener, options) => {\n  useEffect(() => {\n    window.addEventListener(type, listener, options);\n    return () => {\n      window.removeEventListener(type, listener, options);\n    };\n  });\n};","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const timeout = (fn, ms) => {\n  const id = setTimeout(fn, ms);\n  return () => clearTimeout(id);\n};","map":null,"metadata":{},"sourceType":"module"}

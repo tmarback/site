@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const nullable = validate => (value, key) => value === null ? [] : validate(value, key);","map":null,"metadata":{},"sourceType":"module"}

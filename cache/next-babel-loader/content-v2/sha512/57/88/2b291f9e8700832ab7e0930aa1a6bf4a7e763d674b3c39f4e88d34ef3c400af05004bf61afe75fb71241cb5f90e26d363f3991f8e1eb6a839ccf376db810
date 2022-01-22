@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { first } from \"./first\";\nimport { isObject } from \"./isObject\";\nexport const noExcessiveKeys = (...keys) => first(isObject, (value, key) => Object.keys(value).filter(key => !keys.includes(key)).map(excessiveKey => `${key}: Excessive key ${JSON.stringify(excessiveKey)}`));","map":null,"metadata":{},"sourceType":"module"}

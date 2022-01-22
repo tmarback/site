@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled from \"styled-components\";\nexport const CheckableContainer = styled.div.withConfig({\n  componentId: \"sc-17wohe6-0\"\n})([\"display:flex;align-items:center;height:36px;user-select:none;\"]);","map":null,"metadata":{},"sourceType":"module"}

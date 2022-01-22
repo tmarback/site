@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { matchesRegex } from \"./matchesRegex\";\nexport const isUrl = () => matchesRegex(/^(?:https?:\\/\\/|[%{])/, \"Invalid URL\");","map":null,"metadata":{},"sourceType":"module"}

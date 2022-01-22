@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const all = (...validators) => (value, key) => validators.flatMap(validate => validate(value, key));","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled from \"styled-components\";\nexport const ModalTitle = styled.h4.withConfig({\n  componentId: \"sc-1m03zfn-0\"\n})([\"color:\", \";font-size:16px;font-weight:600;letter-spacing:0.3px;line-height:20px;flex:1;margin:0;\"], ({\n  theme\n}) => theme.header.primary);","map":null,"metadata":{},"sourceType":"module"}

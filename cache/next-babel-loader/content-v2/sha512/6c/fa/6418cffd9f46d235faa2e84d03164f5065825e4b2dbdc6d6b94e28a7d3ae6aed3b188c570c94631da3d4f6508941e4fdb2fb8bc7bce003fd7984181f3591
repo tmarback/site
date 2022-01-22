@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled from \"styled-components\";\nexport const Separator = styled.div.withConfig({\n  componentId: \"sc-13r9wx3-0\"\n})([\"height:1px;background:\", \";\"], ({\n  theme\n}) => theme.backgroundModifier.accent);","map":null,"metadata":{},"sourceType":"module"}

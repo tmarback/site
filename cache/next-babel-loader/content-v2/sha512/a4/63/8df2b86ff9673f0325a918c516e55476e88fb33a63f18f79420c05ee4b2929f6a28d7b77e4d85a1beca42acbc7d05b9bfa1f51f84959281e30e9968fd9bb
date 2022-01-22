@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled from \"styled-components\";\nexport const RowContainer = styled.div.withConfig({\n  componentId: \"sc-10c0k2j-0\"\n})([\"display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:12px;\"]);","map":null,"metadata":{},"sourceType":"module"}

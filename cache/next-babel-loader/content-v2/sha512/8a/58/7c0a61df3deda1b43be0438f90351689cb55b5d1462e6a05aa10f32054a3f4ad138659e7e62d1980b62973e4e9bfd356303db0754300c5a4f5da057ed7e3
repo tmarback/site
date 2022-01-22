@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createContext } from \"react\";\nexport const RadioContext = /*#__PURE__*/createContext(null);\nRadioContext.displayName = \"RadioContext\";\nexport const RadioProvider = RadioContext.Provider;","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { defaultRules } from \"simple-markdown\";\nexport const escape = defaultRules.escape;","map":null,"metadata":{},"sourceType":"module"}

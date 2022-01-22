@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { mapKeys } from \"./mapKeys\";\nexport const toSnakeCase = object => mapKeys(object, key => key.replace(/[A-Z]/g, match => `_${match.toLowerCase()}`));","map":null,"metadata":{},"sourceType":"module"}

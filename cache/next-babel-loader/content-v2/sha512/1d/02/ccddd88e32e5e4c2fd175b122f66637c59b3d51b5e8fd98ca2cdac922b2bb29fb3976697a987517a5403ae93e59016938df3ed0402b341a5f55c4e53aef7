@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const downloadBlob = (blob, name) => {\n  const url = URL.createObjectURL(blob);\n  const anchor = document.createElement(\"a\");\n  document.body.append(anchor);\n  anchor.href = url;\n  anchor.download = name;\n  anchor.click();\n  anchor.remove();\n  URL.revokeObjectURL(url);\n};","map":null,"metadata":{},"sourceType":"module"}

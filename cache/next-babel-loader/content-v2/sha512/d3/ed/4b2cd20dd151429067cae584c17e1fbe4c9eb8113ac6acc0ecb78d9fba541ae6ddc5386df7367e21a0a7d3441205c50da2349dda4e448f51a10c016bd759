@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled from \"styled-components\";\nexport const ButtonList = styled.div.withConfig({\n  componentId: \"s4tkdn-0\"\n})([\"display:flex;flex-flow:wrap;margin-bottom:-8px;& > *{margin-right:12px;margin-bottom:8px;}\"]);","map":null,"metadata":{},"sourceType":"module"}

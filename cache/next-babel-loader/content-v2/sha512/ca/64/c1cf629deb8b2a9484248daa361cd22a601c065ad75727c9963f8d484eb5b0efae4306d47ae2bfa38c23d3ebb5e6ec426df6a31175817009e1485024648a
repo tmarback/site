@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled from \"styled-components\";\nimport { Button } from \"../button/Button\";\nexport const InputContainer = styled.div.withConfig({\n  componentId: \"sc-5vvyr0-0\"\n})([\"min-width:0;display:flex;flex-direction:column;& \", \"{margin-left:8px;}\"], Button);","map":null,"metadata":{},"sourceType":"module"}

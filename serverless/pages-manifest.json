@@ -1,0 +1,6 @@
+{
+  "/404": "pages/404.html",
+  "/_error": "pages/_error.js",
+  "/": "pages/index.js",
+  "/viewer": "pages/viewer.js"
+}

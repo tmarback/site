@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const isNumber = (value, key) => typeof value === \"number\" ? [] : [`${key}: Must be number`];","map":null,"metadata":{},"sourceType":"module"}
