@@ -9,6 +9,7 @@ on:
       - main
   workflow_dispatch:
 
+concurrency: ci-${{ github.ref }}
 jobs:
   build:
     name: Build
@@ -25,7 +26,7 @@ jobs:
         cache: 'yarn'
     
     - name: Install NPM packages
-      run: yarn install
+      run: yarn install --frozen-lockfile
     
     - name: Build project
       run: yarn build
@@ -34,7 +35,7 @@ jobs:
       run: yarn run test
       
     - name: Export project
-      run: yarn run export
+      run: yarn export
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
